@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.bg-img{
+    
+    background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');
+    background-repeat:no-repeat;
+    background-position:center;
+    min-height :100vh;
+
+}
+
+#bkk-hours-box {
+    display: none;
+}
+
+
+#cnx-hours-box {
+    display: none;
+}
+
+/* #cnx-daily {
+    visibility: visible;
+}
+
+#cnx-hours {
+    display: none;
+} */
