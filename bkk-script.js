@@ -55,13 +55,13 @@ $(document).ready(function () {
 
         for (var i = 0; i < 7; i++ ) {
             weatherItems.push(results['results']['weather'][i]['temperature']['temp']);
-            weatherIcons.push(results['results']['weather'][i]['icon']);
+            weatherIcons.push(results['results']['weather'][i]['icon'].slice(0,4) + "s"+ results['results']['weather'][i]['icon'].slice(4));
             weatherDates.push(results['results']['weather'][i]['timeStamp'].slice(0,10));
         }
 
         
 
-        console.log(weatherDates);
+        console.log(weatherIcons);
 
         var xValues = weatherDates;
         var yValues = weatherItems;
@@ -162,7 +162,7 @@ $(document).ready(function () {
 
         for (var i = 0; i < 8; i++ ) {
             weatherItems.push(results['results']['weather'][i]['temperature']['temp']);
-            weatherIcons.push(results['results']['weather'][i]['icon']);
+            weatherIcons.push(results['results']['weather'][i]['icon'].slice(0,4) + "s"+ results['results']['weather'][i]['icon'].slice(4));
             weatherDates.push(results['results']['weather'][i]['timeStamp'].slice(0,10));
         }
 
