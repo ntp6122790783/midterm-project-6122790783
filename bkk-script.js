@@ -146,9 +146,10 @@ $(document).ready(function () {
         success: function(results) {
             $('.spinner-border').hide();
             // console.log(results['results']['weather']);
+
             createHoursBKKChart(results)
             
-            // console.log(response);
+            console.log(results);
         }, 
     });
 
