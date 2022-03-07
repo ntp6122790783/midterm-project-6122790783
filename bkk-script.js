@@ -79,7 +79,7 @@ $(document).ready(function () {
                 xAxis.ticks.forEach((value, index) => {  
                     var x = xAxis.getPixelForTick(index);      
                     var image = new Image();
-                    image.src = "https://openweathermap.org/img/w/10d.png";
+                    image.src = 'https://www.tutorialspoint.com/images/seaborn-4.jpg?v=2';
                     // image.src = icons[index],
                     ctx.drawImage(image, x + 20, yAxis.bottom+20);
                 });      
