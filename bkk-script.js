@@ -79,7 +79,8 @@ $(document).ready(function () {
                 xAxis.ticks.forEach((value, index) => {  
                     var x = xAxis.getPixelForTick(index);      
                     var image = new Image();
-                    image.src = icons[index],
+                    image.src = "http://openweathermap.org/img/w/10d.png";
+                    // image.src = icons[index],
                     ctx.drawImage(image, x + 20, yAxis.bottom+20);
                 });      
                 }
