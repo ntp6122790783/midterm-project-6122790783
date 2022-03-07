@@ -55,7 +55,7 @@ $(document).ready(function () {
 
         for (var i = 0; i < 7; i++ ) {
             weatherItems.push(results['results']['weather'][i]['temperature']['temp']);
-            weatherIcons.push(results['results']['weather'][i]['icon']);
+            weatherIcons.push(results['results']['weather'][i]['icon'].slice(0,4) + "s"+ results['results']['weather'][i]['icon'].slice(4));
             weatherDates.push(results['results']['weather'][i]['timeStamp'].slice(0,10));
         }
 
@@ -79,8 +79,7 @@ $(document).ready(function () {
                 xAxis.ticks.forEach((value, index) => {  
                     var x = xAxis.getPixelForTick(index);      
                     var image = new Image();
-                    image.src = 'https://www.tutorialspoint.com/images/seaborn-4.jpg?v=2';
-                    // image.src = icons[index],
+                    image.src = icons[index],
                     ctx.drawImage(image, x + 20, yAxis.bottom+20);
                 });      
                 }
@@ -163,7 +162,7 @@ $(document).ready(function () {
 
         for (var i = 0; i < 8; i++ ) {
             weatherItems.push(results['results']['weather'][i]['temperature']['temp']);
-            weatherIcons.push(results['results']['weather'][i]['icon']);
+            weatherIcons.push(results['results']['weather'][i]['icon'].slice(0,4) + "s"+ results['results']['weather'][i]['icon'].slice(4));
             weatherDates.push(results['results']['weather'][i]['timeStamp'].slice(0,10));
         }
 
